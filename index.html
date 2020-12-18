@@ -1,17 +1,23 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product landing page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
-        <img id="header-img" src="/img/logo.png" alt="The logo of The Coffee Slurp, putline of a steaming cup of coffee">
+        <img id="header-img" src="/img/logo.png"
+            alt="The logo of The Coffee Slurp, putline of a steaming cup of coffee">
         <nav id="nav-bar">
-            <a href="#sec-1" class="nav-link">WHO ARE WE</a>
+            <a href="#sec-1" class="nav-link">OUR COFFEE</a>
             <a href="#sec-2" class="nav-link">UNIQUE FLAVORS</a>
-            <a href="#sec-3" class="nav-link">STAY IN TOUCH</a>
+            <a href="#sec-3" class="nav-link">WE LOVE COFFEE</a>
+            <a href="#sec-4" class="nav-link">STAY IN TOUCH</a>
         </nav>
     </header>
 
@@ -20,20 +26,71 @@
         <a id="main-btn">YES, PLEASE!</a>
     </section>
     <section id="sec-2">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yNQ23sQ9pxg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="headers">
+            <h2>We are the number 1 distributor for organic cofee from Peru in the world</h2>
+            <h3>Try our various coffee flavours, carefully roasted only with the best organic herbs and spices</h3>
+        </div>
+        <div id="row">
+            <div class="main-container-1">
+                <div class="icon-container"><i class="fas fa-mug-hot"></i>
+                    <h4 class="flavor-cocoa">Hot cocoa</h4>
+                </div>
+                <div class="text-container">
+                    <p class="text">Try our cofee, slow roasted in organic cocoa butter. Yes, you read that right! </br></br> The rich aroma of the cocoa butter will wake up your senses and fill you with that extra morning energy you always need. 
+                    </p>
+                </div>
+                <div class="button-container"><button class="btn btn-flavor-1">Order now</button></div>
+            </div>
+            <div class="main-container-2">
+                <div class="icon-container"><i class="fas fa-apple-alt"></i>
+                    <h4 class="flavor-cinnamon">Apple-cinnamon</h4>
+                </div>
+                <div class="text-container">
+                    <p class="text">A delicious sip of autumn flavors, bringing beautiful memories and clamness. </br></br> Slowly roasted coffee with organic cinnamon and sun dried apple slices, grinded to a fine mixture. </p>
+                </div>
+                <div class="button-container"><button class="btn btn-flavor-2">Order now</button></div>
+            </div>
+            <div class="main-container-3">
+                <div class="icon-container"><i class="fas fa-cookie"></i>
+                    <h4 class="flavor-almond">Almond cookie</h4>
+                </div>
+                <div class="text-container">
+                    <p class="text">Guilt free cookie for breakfast? We got you covered. </br></br> Fine grind of roasted almonds and pieces of dark chocolate, made to melt in your coffee.</p>
+                </div>
+                <div class="button-container"><button class="btn btn-flavor-3">Order now</button></div>
+            </div>
+        </div>
     </section>
     <section id="sec-3">
-        <form id="form">
+        <iframe id="video" src="https://www.youtube.com/embed/yNQ23sQ9pxg" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <img id="coffee-spill-img" src="/img/coffee-spill.png"
+            alt="Cup of coffee in which 2 cubes of sugar are dropping" />
+    </section>
+    <section id="sec-4">
+        <h2>Always be the first to know about the latest offers and new flavors!</h2> 
+        <p class="newsletter-text">Our newsletter comes with serving ideas and interesting flavor combinations that will leave your friends wanting more.</p> 
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
             <input type="email" name="email" id="email" placeholder="Your email">
-            <input type="submit" id="submit" value="Sign up">
+            <input type="submit" id="submit" class="btn-email" value="Sign up">
         </form>
     </section>
-
     <footer>
-
+        <div class="footer">
+            <div class="social-media">
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-snapchat"></i></a>
+            </div>
+            <div class="copyright-text">
+           <p> &copy THE COFFEE SLURP 2020 </p></div>
+           <div class="links">
+               <a>Terms of service</a>
+               <a>Privacy policy</a>
+           </div>
+        </div>
     </footer>
 </body>
 </html>
-<!-- 
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
-User Story #14: My product landing page should have at least one media query.
